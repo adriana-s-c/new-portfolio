@@ -1,0 +1,19 @@
+.box {
+  background-image: url(../../images/hero-images/hero-image-light.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -150px;
+  height: 916px;
+  width: 100%;
+}
+
+.text {
+  position: absolute;
+  top: 330px;
+  left: 130px;
+  font-family: "Wix Madefor Text";
+  font-weight: 800;
+  font-size: 80px;
+  color: #468474;
+  text-transform: uppercase;
+}
