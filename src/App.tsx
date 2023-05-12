@@ -1,10 +1,11 @@
 import styles from "./index.module.css";
-import { Header } from "./components";
+import { Header, About } from "./components";
 
 function App() {
   return (
     <div className={styles.app}>
       <Header />
+      <About />
     </div>
   );
 }

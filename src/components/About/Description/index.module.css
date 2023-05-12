@@ -1,0 +1,20 @@
+.paragraphBox {
+  width: 661px;
+  position: relative;
+  left: calc((100% - 661px) / 2);
+  margin-top: 52px;
+  margin-bottom: 52px;
+}
+.heading {
+  font-size: 56px;
+  color: #494e5f;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.name {
+  margin: 0px;
+  font-size: 96px;
+  color: #468474;
+  font-weight: 600;
+}
