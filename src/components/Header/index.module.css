@@ -9,11 +9,11 @@
 
 .text {
   position: absolute;
-  top: 330px;
-  left: 130px;
+  top: 200px;
+  left: 190px;
   font-family: "Wix Madefor Text";
   font-weight: 800;
   font-size: 80px;
-  color: #468474;
+  color: #32437b;
   text-transform: uppercase;
 }
