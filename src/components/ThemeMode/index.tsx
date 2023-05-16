@@ -5,7 +5,6 @@ import balloonIconDark from "../../images/icons/air-hot-balloonDark.png";
 
 export function ThemeMode() {
   const [mode, setMode] = React.useState("lightMode");
-  console.log(mode);
 
   return (
     <div
