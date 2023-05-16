@@ -12,7 +12,7 @@ const WebsiteIcon = () => {
       className={styles.icon}
     >
       <path
-        fill-rule="evenodd"
+        fillRule="evenodd"
         d="M18.885 2a1 1 0 00-1-1h-6a1 1 0 100 2h3.586L9.178 9.293a1 1 0 101.414 1.414l6.293-6.293V8a1 1 0 102 0V2zM3.009 3a2.012 2.012 0 00-1.998 2.218c.148 1.453.374 3.978.374 5.782 0 1.746-.212 4.17-.36 5.642a2.028 2.028 0 002.218 2.218c1.473-.148 3.896-.36 5.642-.36 1.804 0 4.33.226 5.782.374a2.012 2.012 0 002.218-1.998V12a1 1 0 10-2 0v4.878l-.003.003a.018.018 0 01-.006.003h-.006c-1.451-.147-4.068-.384-5.985-.384-1.857 0-4.37.222-5.842.37h-.008a.034.034 0 01-.012-.008.033.033 0 01-.008-.012.01.01 0 010-.002v-.006c.148-1.473.37-3.985.37-5.842 0-1.917-.237-4.534-.385-5.985v-.006l.004-.006A.016.016 0 013.007 5h4.878a1 1 0 000-2H3.009z"
       />
     </svg>
@@ -28,7 +28,7 @@ const CodeIcon = () => {
       version="1.1"
       className={styles.icon}
     >
-      <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+      <g id="Page-1" stroke="none" strokeWidth="1" fillRule="evenodd">
         <g
           id="Dribbble-Light-Preview"
           transform="translate(-180.000000, -3283.000000)"
@@ -78,7 +78,7 @@ export function ProjectRender() {
     <div className={styles.box}>
       {data.map((project) => {
         return (
-          <div className={styles.projectBox}>
+          <div className={styles.projectBox} key={project.id}>
             <img
               src={require(`../../../images/previewImages/${project.lightImage}`)}
               alt="Preview App"
