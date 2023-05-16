@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import { Header, About, ThemeMode } from "./components";
+import { Header, About, ThemeMode, Projects } from "./components";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <Header />
       <ThemeMode />
       <About />
+      <Projects />
     </div>
   );
 }

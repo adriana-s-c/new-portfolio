@@ -1,0 +1,21 @@
+.box {
+  position: absolute;
+  top: 1700px;
+  width: 100%;
+}
+
+.header {
+  font-family: "Hannari";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 124px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #32437b;
+  text-transform: uppercase;
+  margin: 0px;
+  justify-content: center;
+}
