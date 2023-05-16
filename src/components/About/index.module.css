@@ -6,8 +6,7 @@
   height: 1890px;
   width: 100%;
   font-family: "Wix Madefor Text";
-  position: absolute;
-
+  position: relative;
   top: 180px;
 }
 .textBox {

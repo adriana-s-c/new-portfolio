@@ -1,4 +1,6 @@
 .box {
+  position: absolute;
+  top: 0px;
   background-image: url(../../images/hero-images/hero-image-light.jpg);
   background-repeat: no-repeat;
   background-size: cover;

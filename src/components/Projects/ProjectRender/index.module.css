@@ -16,6 +16,10 @@
 .projectBox:nth-child(2n) {
   flex-direction: row-reverse;
 }
+.projectBox:last-of-type {
+  margin-bottom: 0px;
+}
+
 .previewImg {
   width: 568px;
   height: 306px;
