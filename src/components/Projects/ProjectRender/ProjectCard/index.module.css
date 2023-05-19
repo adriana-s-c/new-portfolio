@@ -1,0 +1,91 @@
+.projectBox {
+  position: relative;
+  left: calc((100% - 1250px) / 2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 1250px;
+  height: 356px;
+}
+.projectBox:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+.projectBox:last-of-type {
+  margin-bottom: 0px;
+}
+
+.previewImg {
+  width: 568px;
+  height: 306px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  justify-content: space-evenly;
+}
+
+.iconBox:first-of-type {
+  margin: 0px;
+}
+
+.iconBox {
+  width: 50px;
+  height: 50px;
+  background: #f8ebe2;
+  border-radius: 100%;
+  border: none;
+  margin-left: 20px;
+  transition: 0.4s;
+}
+.iconBox:hover {
+  background-color: #494e5f;
+  fill: #f1f1f1;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.icon {
+  position: relative;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  fill: #060b0b;
+}
+
+.icon:hover {
+  fill: white;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #494e5f;
+}
+
+.linkBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.divider {
+  height: 11px;
+  width: 80px;
+  align-self: center;
+  fill: #060b0b;
+  margin-bottom: 20px;
+}
+
+.projectHeader {
+  font-family: "Hannari";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #494e5f;
+  text-align: center;
+  margin: 0px;
+}
