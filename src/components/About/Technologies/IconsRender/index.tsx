@@ -5,7 +5,7 @@ import { useAnimate, useInView, stagger } from "framer-motion";
 
 export function IconsRender() {
   const [scope, animate] = useAnimate();
-  const isInView = useInView(scope);
+  const isInView = useInView(scope, { once: true });
 
   React.useEffect(() => {
     if (isInView) {
