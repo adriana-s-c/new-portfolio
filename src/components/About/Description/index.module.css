@@ -18,3 +18,26 @@
   color: #32437b;
   font-weight: 600;
 }
+
+.unactiveDot path {
+  fill: #494e5f;
+  opacity: 0.2;
+}
+
+.unactiveDot:hover path {
+  fill: white;
+  opacity: 1;
+}
+
+.activeDot path {
+  fill: #494e5f;
+}
+
+.contentBox {
+  height: 150px;
+  font-family: "Hannari";
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #494e5f;
+}
