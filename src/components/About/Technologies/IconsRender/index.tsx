@@ -1,20 +1,31 @@
 import * as React from "react";
 import styles from "./index.module.css";
 import { Icons } from "./iconData";
-import { FadeIn } from "../../../Animations";
+import { useAnimate, useInView, stagger } from "framer-motion";
 
 export function IconsRender() {
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
+
+  React.useEffect(() => {
+    if (isInView) {
+      animate(
+        "li",
+        { opacity: 1 },
+        { delay: stagger(0.15, { ease: "circIn" }) }
+      );
+    }
+  }, [isInView, animate]);
+
   return (
-    <div className={styles.box}>
+    <ul ref={scope} className={styles.box}>
       {Icons.map((icon: any) => {
         return (
-          <div key={icon.id}>
-            <FadeIn>
-              <div className={styles.icon}>{icon.code}</div>
-            </FadeIn>
-          </div>
+          <li key={icon.id} className={styles.icon}>
+            {icon.code}
+          </li>
         );
       })}
-    </div>
+    </ul>
   );
 }
