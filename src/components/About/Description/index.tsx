@@ -1,6 +1,51 @@
 import styles from "./index.module.css";
 import * as React from "react";
 import { motion } from "framer-motion";
+import { ThemeContext } from "../../../context";
+
+type DotIconProps = {
+  numberId: number;
+  activeDotId: number;
+  setActiveDotId: any;
+  setTextId: any;
+  mode: string;
+};
+
+function DotIcon({
+  numberId,
+  activeDotId,
+  setActiveDotId,
+  setTextId,
+  mode,
+}: DotIconProps) {
+  return (
+    <svg
+      width="30px"
+      height="30px"
+      viewBox="0 0 24 24"
+      fill="#000000"
+      xmlns="http://www.w3.org/2000/svg"
+      className={
+        mode === "light"
+          ? activeDotId === numberId
+            ? styles.activeDotLight
+            : styles.unactiveDotLight
+          : activeDotId === numberId
+          ? styles.activeDotDark
+          : styles.unactiveDotDark
+      }
+      onClick={() => {
+        setActiveDotId(numberId);
+        setTextId(numberId);
+      }}
+    >
+      <path
+        d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z"
+        fill="#000000"
+      />
+    </svg>
+  );
+}
 
 const aboutData = [
   {
@@ -23,37 +68,23 @@ const aboutData = [
 export function Description() {
   const [textId, setTextId] = React.useState(1);
   const [activeDotId, setActiveDotId] = React.useState(1);
-
-  function DotIcon({ numberId }: { numberId: number }) {
-    return (
-      <svg
-        width="30px"
-        height="30px"
-        viewBox="0 0 24 24"
-        fill="#000000"
-        xmlns="http://www.w3.org/2000/svg"
-        className={
-          activeDotId === numberId ? styles.activeDot : styles.unactiveDot
-        }
-        onClick={() => {
-          setActiveDotId(numberId);
-          setTextId(numberId);
-        }}
-      >
-        <path
-          d="M12 9.5C13.3807 9.5 14.5 10.6193 14.5 12C14.5 13.3807 13.3807 14.5 12 14.5C10.6193 14.5 9.5 13.3807 9.5 12C9.5 10.6193 10.6193 9.5 12 9.5Z"
-          fill="#000000"
-        />
-      </svg>
-    );
-  }
+  const { mode } = React.useContext(ThemeContext);
+  const isLightMode = mode === "light";
 
   return (
     <div>
-      <h3 className={styles.heading}> Hi! I'm</h3>
-      <h2 className={styles.name}>Adriana Słabosz</h2>
+      <h3 className={isLightMode ? styles.headingLight : styles.headingDark}>
+        Hi! I'm
+      </h3>
+      <h2 className={isLightMode ? styles.nameLight : styles.nameDark}>
+        Adriana Słabosz
+      </h2>
       <div className={styles.paragraphBox}>
-        <div className={styles.contentBox}>
+        <div
+          className={
+            isLightMode ? styles.contentBoxLight : styles.contentBoxDark
+          }
+        >
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, x: 0 }}
@@ -64,9 +95,27 @@ export function Description() {
           </motion.div>
         </div>
         <div>
-          <DotIcon numberId={1} />
-          <DotIcon numberId={2} />
-          <DotIcon numberId={3} />
+          <DotIcon
+            numberId={1}
+            activeDotId={activeDotId}
+            setActiveDotId={setActiveDotId}
+            setTextId={setTextId}
+            mode={mode}
+          />
+          <DotIcon
+            numberId={2}
+            activeDotId={activeDotId}
+            setActiveDotId={setActiveDotId}
+            setTextId={setTextId}
+            mode={mode}
+          />
+          <DotIcon
+            numberId={3}
+            activeDotId={activeDotId}
+            setActiveDotId={setActiveDotId}
+            setTextId={setTextId}
+            mode={mode}
+          />
         </div>
       </div>
     </div>

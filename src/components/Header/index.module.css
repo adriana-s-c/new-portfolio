@@ -1,4 +1,4 @@
-.box {
+.boxLight {
   position: absolute;
   top: 0px;
   background-image: url(../../images/hero-images/hero-image-light.jpg);
@@ -9,7 +9,18 @@
   width: 100%;
 }
 
-.text {
+.boxDark {
+  position: absolute;
+  top: 0px;
+  background-image: url(../../images/hero-images/hero-image-dark.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -150px;
+  height: 916px;
+  width: 100%;
+}
+
+.textLight {
   position: absolute;
   top: 200px;
   left: 190px;
@@ -18,4 +29,15 @@
   font-size: 80px;
   color: #32437b;
   text-transform: uppercase;
+}
+
+.textDark {
+  position: absolute;
+  top: 200px;
+  left: 190px;
+  font-family: "Wix Madefor Text";
+  font-weight: 800;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #070709;
 }

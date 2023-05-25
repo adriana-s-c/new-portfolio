@@ -1,7 +1,12 @@
+import * as React from "react";
+import { ThemeContext } from "../../../context";
 import { IconsRender } from "./IconsRender";
 import styles from "./index.module.css";
 
 export function Technologies() {
+  const { mode } = React.useContext(ThemeContext);
+  const isModeLight = mode === "light";
+
   return (
     <div className={styles.box}>
       <svg
@@ -11,11 +16,10 @@ export function Technologies() {
         height="40.000000pt"
         viewBox="0 0 432.000000 40.000000"
         preserveAspectRatio="xMidYMid meet"
-        className={styles.divider}
+        className={isModeLight ? styles.dividerLight : styles.dividerDark}
       >
         <g
           transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
-          fill="#000000"
           stroke="none"
         >
           <path
@@ -28,7 +32,9 @@ export function Technologies() {
           />
         </g>
       </svg>
-      <h4 className={styles.heading}>What I've used so far</h4>
+      <h4 className={isModeLight ? styles.headingLight : styles.headingDark}>
+        What I've used so far
+      </h4>
       <IconsRender />
     </div>
   );

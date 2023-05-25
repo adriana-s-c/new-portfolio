@@ -4,40 +4,78 @@
   left: calc((100% - 661px) / 2);
   margin-top: 52px;
   margin-bottom: 52px;
+  font-family: "Wix Madefor Text";
 }
-.heading {
+.headingLight {
   font-size: 56px;
   color: #494e5f;
   margin: 0px;
   font-weight: 400;
 }
 
-.name {
+.headingDark {
+  font-size: 56px;
+  color: #f1f1f1;
+  margin: 0px;
+  font-weight: 400;
+}
+
+.nameLight {
   margin: 0px;
   font-size: 96px;
   color: #32437b;
   font-weight: 600;
 }
 
-.unactiveDot path {
+.nameDark {
+  margin: 0px;
+  font-size: 96px;
+  color: #d76f00;
+  font-weight: 600;
+}
+
+.unactiveDotLight path {
   fill: #494e5f;
   opacity: 0.2;
 }
 
-.unactiveDot:hover path {
+.unactiveDotLight:hover path {
   fill: white;
   opacity: 1;
 }
 
-.activeDot path {
-  fill: #494e5f;
+.activeDotLight path {
+  fill: #32437b;
 }
 
-.contentBox {
+.unactiveDotDark path {
+  fill: #f1f1f1;
+  opacity: 0.4;
+}
+
+.unactiveDotDark:hover path {
+  fill: black;
+  opacity: 1;
+}
+
+.activeDotDark path {
+  fill: #d76f00;
+}
+
+.contentBoxLight {
   height: 150px;
-  font-family: "Hannari";
+  font-family: "Wix Madefor Text";
   font-size: 25px;
   line-height: 40px;
   text-align: center;
   color: #494e5f;
+}
+
+.contentBoxDark {
+  height: 150px;
+  font-family: "Wix Madefor Text";
+  font-size: 25px;
+  line-height: 40px;
+  text-align: center;
+  color: #f1f1f1;
 }
