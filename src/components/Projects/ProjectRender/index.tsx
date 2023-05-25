@@ -17,6 +17,7 @@ export function ProjectRender() {
                 description={project.description}
                 github={project.github}
                 website={project.website}
+                id={project.id}
               />
             </FadeIn>
           </div>

@@ -1,4 +1,4 @@
-.projectBox {
+.projectBoxRight {
   position: relative;
   left: calc((100% - 1250px) / 2);
   display: flex;
@@ -7,11 +7,15 @@
   width: 1250px;
   height: 356px;
 }
-.projectBox:nth-child(2n) {
+
+.projectBoxLeft {
+  position: relative;
+  left: calc((100% - 1250px) / 2);
+  display: flex;
   flex-direction: row-reverse;
-}
-.projectBox:last-of-type {
-  margin-bottom: 0px;
+  justify-content: space-evenly;
+  width: 1250px;
+  height: 356px;
 }
 
 .previewImg {
