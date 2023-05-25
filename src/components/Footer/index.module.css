@@ -3,6 +3,7 @@
   height: 307px;
   background-image: url(../../images/divider/lightFooter.png);
   background-repeat: no-repeat;
+  margin-top: -100px;
 }
 
 .boxDark {
@@ -10,6 +11,7 @@
   height: 307px;
   background-image: url(../../images/divider/darkFooter.png);
   background-repeat: no-repeat;
+  margin-top: -100px;
 }
 
 .contentLight {

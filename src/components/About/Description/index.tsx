@@ -2,6 +2,7 @@ import styles from "./index.module.css";
 import * as React from "react";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../../../context";
+import profileImage from "../../../images/profileImage.jpeg";
 
 type DotIconProps = {
   numberId: number;
@@ -72,13 +73,14 @@ export function Description() {
   const isLightMode = mode === "light";
 
   return (
-    <div>
+    <div className={styles.box}>
       <h3 className={isLightMode ? styles.headingLight : styles.headingDark}>
         Hi! I'm
       </h3>
       <h2 className={isLightMode ? styles.nameLight : styles.nameDark}>
         Adriana Słabosz
       </h2>
+      <img src={profileImage} alt="WebPage Author" className={styles.image} />
       <div className={styles.paragraphBox}>
         <div
           className={
