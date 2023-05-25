@@ -1,8 +1,8 @@
 .boxLight {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .boxDark {
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #0a0404;
 }
