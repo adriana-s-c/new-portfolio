@@ -14,8 +14,8 @@ export function Footer() {
         <div className={styles.contactBox}>
           <a href="mailto:slaboszadriana@gmail.com">
             <svg
-              width="60px"
-              height="60px"
+              width="45px"
+              height="45px"
               viewBox="0 0 32 32"
               className={iconMode}
             >
@@ -27,8 +27,8 @@ export function Footer() {
         <div className={styles.contactBox}>
           <a href="tel:668954072">
             <svg
-              width="60px"
-              height="60px"
+              width="45px"
+              height="45px"
               viewBox="0 0 32 32"
               xmlns="http://www.w3.org/2000/svg"
               className={iconMode}

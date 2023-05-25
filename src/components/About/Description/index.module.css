@@ -11,14 +11,14 @@
   font-family: "Wix Madefor Text";
 }
 .headingLight {
-  font-size: 56px;
+  font-size: 46px;
   color: #494e5f;
   margin: 0px;
   font-weight: 400;
 }
 
 .headingDark {
-  font-size: 56px;
+  font-size: 46px;
   color: #f1f1f1;
   margin: 0px;
   font-weight: 400;
@@ -26,14 +26,14 @@
 
 .nameLight {
   margin: 0px;
-  font-size: 96px;
+  font-size: 76px;
   color: #32437b;
   font-weight: 600;
 }
 
 .nameDark {
   margin: 0px;
-  font-size: 96px;
+  font-size: 76px;
   color: #d76f00;
   font-weight: 600;
 }
@@ -74,18 +74,18 @@
 }
 
 .contentBoxLight {
-  height: 150px;
+  height: 200px;
   font-family: "Wix Madefor Text";
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
   text-align: center;
   color: #494e5f;
 }
 
 .contentBoxDark {
-  height: 150px;
+  height: 200px;
   font-family: "Wix Madefor Text";
-  font-size: 25px;
+  font-size: 20px;
   line-height: 40px;
   text-align: center;
   color: #f1f1f1;

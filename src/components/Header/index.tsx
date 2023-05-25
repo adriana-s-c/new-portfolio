@@ -1,24 +1,32 @@
 import * as React from "react";
 import styles from "./index.module.css";
-import { motion } from "framer-motion";
 import { ThemeContext } from "../../context";
 
 export function Header() {
   const { mode } = React.useContext(ThemeContext);
+  const isModeLight = mode === "light";
 
   return (
-    <div
-      className={mode && mode === "light" ? styles.boxLight : styles.boxDark}
-    >
-      <motion.div
-        initial={{ opacity: 0, x: "-20vh" }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ type: "tween", duration: 2 }}
+    <div className={isModeLight ? styles.boxLight : styles.boxDark}>
+      <div
+        className={
+          isModeLight
+            ? styles.animationContainerLight
+            : styles.animationContainerDark
+        }
       >
-        <h1 className={mode === "light" ? styles.textLight : styles.textDark}>
-          Portfolio
-        </h1>
-      </motion.div>
+        <section className={styles.animation}>
+          <div className={isModeLight ? styles.firstLight : styles.firstDark}>
+            <div>Portfolio</div>
+          </div>
+          <div className={isModeLight ? styles.secondLight : styles.secondDark}>
+            <div>Portolio</div>
+          </div>
+          <div className={isModeLight ? styles.thirdLight : styles.thirdDark}>
+            <div>Portfolio</div>
+          </div>
+        </section>
+      </div>
     </div>
   );
 }
