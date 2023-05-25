@@ -81,6 +81,7 @@ type ProjectCardProps = {
   description: string;
   github: string;
   website: string;
+  id: number;
 };
 
 export function ProjectCard({
@@ -90,12 +91,15 @@ export function ProjectCard({
   description,
   github,
   website,
+  id,
 }: ProjectCardProps) {
   const { mode } = React.useContext(ThemeContext);
   const isLightMode = mode === "light";
 
   return (
-    <div className={styles.projectBox}>
+    <div
+      className={id % 2 === 0 ? styles.projectBoxRight : styles.projectBoxLeft}
+    >
       <img
         src={require(`../../../../images/previewImages/${
           isLightMode ? lightImage : darkImage
