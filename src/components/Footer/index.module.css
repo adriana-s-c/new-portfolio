@@ -1,26 +1,39 @@
-.box {
-  position: relative;
-  top: -100px;
+.boxLight {
   width: 100%;
-  height: 207px;
+  height: 307px;
+  background-image: url(../../images/divider/lightFooter.png);
+  background-repeat: no-repeat;
 }
 
-.footerWaves {
-  height: 390px;
+.boxDark {
   width: 100%;
-  margin: 0px;
+  height: 307px;
+  background-image: url(../../images/divider/darkFooter.png);
+  background-repeat: no-repeat;
 }
 
-.content {
+.contentLight {
   position: relative;
-  top: -80px;
-  background-color: #f8ebe2;
+  top: 200px;
   height: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  color: #494e5f;
 }
+
+.contentDark {
+  position: relative;
+  top: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #f1f1f1;
+}
+
 .heading {
   font-family: "Wix Madefor Text";
   font-style: normal;
@@ -29,15 +42,21 @@
   line-height: 48px;
   text-align: center;
   letter-spacing: -0.5px;
-  color: #494e5f;
   margin: 0px;
 }
 
-.icon {
+.iconLight {
   fill: #494e5f;
 }
-.icon:hover {
+.iconLight:hover {
   fill: white;
+}
+
+.iconDark {
+  fill: #f1f1f1;
+}
+.iconDark:hover {
+  fill: #d76f00;
 }
 
 .text {
@@ -45,7 +64,6 @@
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  color: #242b37;
   margin-left: 30px;
 }
 
