@@ -26,11 +26,14 @@
   justify-content: space-evenly;
 }
 
-.iconBox:first-of-type {
+.iconBoxLight:first-of-type {
+  margin: 0px;
+}
+.iconBoxDark:first-of-type {
   margin: 0px;
 }
 
-.iconBox {
+.iconBoxLight {
   width: 50px;
   height: 50px;
   background: #f8ebe2;
@@ -39,14 +42,30 @@
   margin-left: 20px;
   transition: 0.4s;
 }
-.iconBox:hover {
+.iconBoxDark {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: none;
+  margin-left: 20px;
+  transition: 0.4s;
+  background: #d76f00;
+}
+
+.iconBoxLight:hover {
+  background-color: #494e5f;
+  fill: #f1f1f1;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.iconBoxDark:hover {
   background-color: #494e5f;
   fill: #f1f1f1;
   transition: 0.4s;
   cursor: pointer;
 }
 
-.icon {
+.iconLight {
   position: relative;
   padding: 10px;
   width: 30px;
@@ -54,11 +73,22 @@
   fill: #060b0b;
 }
 
-.icon:hover {
-  fill: white;
+.iconDark {
+  position: relative;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  fill: #f1f1f1;
 }
 
-.description {
+.iconLight:hover {
+  fill: white;
+}
+.iconDark:hover {
+  fill: #d76f00;
+}
+
+.descriptionLight {
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
@@ -66,26 +96,52 @@
   color: #494e5f;
 }
 
+.descriptionDark {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: #f1f1f1;
+}
+
 .linkBox {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.divider {
+.dividerLight {
   height: 11px;
   width: 80px;
   align-self: center;
   fill: #060b0b;
   margin-bottom: 20px;
 }
+.dividerDark {
+  height: 11px;
+  width: 80px;
+  align-self: center;
+  fill: #f1f1f1;
+  margin-bottom: 20px;
+}
 
-.projectHeader {
+.projectHeaderLight {
   font-family: "Hannari";
   font-weight: 400;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -0.5px;
   color: #494e5f;
+  text-align: center;
+  margin: 0px;
+}
+
+.projectHeaderDark {
+  font-family: "Hannari";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+  color: #f1f1f1;
   text-align: center;
   margin: 0px;
 }

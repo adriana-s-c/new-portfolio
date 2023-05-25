@@ -5,10 +5,11 @@ import { ThemeContext } from "./context";
 
 function App() {
   const [mode, setMode] = React.useState("light");
+  const isLightMode = mode === "light";
 
   return (
     <ThemeContext.Provider value={{ mode, setMode }}>
-      <div className={styles.box}>
+      <div className={isLightMode ? styles.boxLight : styles.boxDark}>
         <Header />
         <ThemeMode />
         <About />

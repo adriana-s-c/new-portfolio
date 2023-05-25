@@ -11,6 +11,7 @@ export function ProjectRender() {
           <div className={styles.projectContainer} key={project.id}>
             <FadeIn>
               <ProjectCard
+                darkImage={project.darkImage}
                 lightImage={project.lightImage}
                 title={project.title}
                 description={project.description}
