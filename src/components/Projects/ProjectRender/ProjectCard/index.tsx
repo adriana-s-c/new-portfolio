@@ -1,6 +1,8 @@
+import * as React from "react";
+import { ThemeContext } from "../../../../context";
 import styles from "./index.module.css";
 
-const WebsiteIcon = () => {
+const WebsiteIcon = ({ mode }: { mode: string }) => {
   return (
     <svg
       width="800px"
@@ -8,7 +10,7 @@ const WebsiteIcon = () => {
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      className={styles.icon}
+      className={mode === "light" ? styles.iconLight : styles.iconDark}
     >
       <path
         fillRule="evenodd"
@@ -18,7 +20,7 @@ const WebsiteIcon = () => {
   );
 };
 
-const DividerIcon = () => {
+const DividerIcon = ({ mode }: { mode: string }) => {
   return (
     <svg
       version="1.0"
@@ -27,7 +29,7 @@ const DividerIcon = () => {
       height="40.000000pt"
       viewBox="0 0 432.000000 40.000000"
       preserveAspectRatio="xMidYMid meet"
-      className={styles.divider}
+      className={mode === "light" ? styles.dividerLight : styles.dividerDark}
     >
       <g
         transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
@@ -46,14 +48,14 @@ const DividerIcon = () => {
   );
 };
 
-const CodeIcon = () => {
+const CodeIcon = ({ mode }: { mode: string }) => {
   return (
     <svg
       width="800px"
       height="800px"
       viewBox="0 -3 19 19"
       version="1.1"
-      className={styles.icon}
+      className={mode === "light" ? styles.iconLight : styles.iconDark}
     >
       <g id="Page-1" stroke="none" strokeWidth="1" fillRule="evenodd">
         <g
@@ -74,6 +76,7 @@ const CodeIcon = () => {
 
 type ProjectCardProps = {
   lightImage: string;
+  darkImage: string;
   title: string;
   description: string;
   github: string;
@@ -82,31 +85,53 @@ type ProjectCardProps = {
 
 export function ProjectCard({
   lightImage,
+  darkImage,
   title,
   description,
   github,
   website,
 }: ProjectCardProps) {
+  const { mode } = React.useContext(ThemeContext);
+  const isLightMode = mode === "light";
+
   return (
     <div className={styles.projectBox}>
       <img
-        src={require(`../../../../images/previewImages/${lightImage}`)}
+        src={require(`../../../../images/previewImages/${
+          isLightMode ? lightImage : darkImage
+        }`)}
         alt="Preview App"
         className={styles.previewImg}
       ></img>
       <div className={styles.textBox}>
-        <DividerIcon />
-        <h3 className={styles.projectHeader}>{title}</h3>
-        <p className={styles.description}>{description}</p>
+        <DividerIcon mode={mode} />
+        <h3
+          className={
+            isLightMode ? styles.projectHeaderLight : styles.projectHeaderDark
+          }
+        >
+          {title}
+        </h3>
+        <p
+          className={
+            isLightMode ? styles.descriptionLight : styles.descriptionDark
+          }
+        >
+          {description}
+        </p>
         <div className={styles.linkBox}>
-          <div className={styles.iconBox}>
+          <div
+            className={isLightMode ? styles.iconBoxLight : styles.iconBoxDark}
+          >
             <a href={github} target="_blank" rel="noopener noreferrer">
-              <CodeIcon />
+              <CodeIcon mode={mode} />
             </a>
           </div>
-          <div className={styles.iconBox}>
+          <div
+            className={isLightMode ? styles.iconBoxLight : styles.iconBoxDark}
+          >
             <a href={website} target="_blank" rel="noopener noreferrer">
-              <WebsiteIcon />
+              <WebsiteIcon mode={mode} />
             </a>
           </div>
         </div>
