@@ -7,10 +7,13 @@
   width: 100%;
   font-family: "Wix Madefor Text";
   position: relative;
-  top: 180px;
+  top: 400px;
 }
-.textBox {
+.textBoxLight {
   background-color: #f8ebe2;
+}
+.textBoxDark {
+  background-color: #251822;
 }
 
 .topDivider {

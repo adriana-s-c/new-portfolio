@@ -4,16 +4,32 @@
   align-items: center;
 }
 
-.divider {
+.dividerLight {
   height: 11px;
   width: 120px;
+  fill: #060b0b;
 }
 
-.heading {
+.dividerDark {
+  height: 11px;
+  width: 120px;
+  fill: #f1f1f1;
+}
+
+.headingLight {
   font-weight: 400;
   font-size: 35px;
   letter-spacing: -1px;
   color: #494e5f;
+  margin: 0px;
+  margin-top: 34px;
+}
+
+.headingDark {
+  font-weight: 400;
+  font-size: 35px;
+  letter-spacing: -1px;
+  color: #f1f1f1;
   margin: 0px;
   margin-top: 34px;
 }
