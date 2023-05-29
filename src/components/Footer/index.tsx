@@ -21,7 +21,7 @@ export function Footer() {
       <div className={isLightMode ? styles.contentLight : styles.contentDark}>
         <h3 className={styles.heading}>Contact me</h3>
         <div className={styles.contactBox}>
-          <a href="mailto:slaboszadriana@gmail.com">
+          <a href="&#109;a&#105;l&#116;&#111;:&#115;&#108;&#97;&#98;&#111;&#115;&#122;&#97;&#100;&#114;&#105;&#97;&#110;&#97;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
             <svg
               width="45px"
               height="45px"
@@ -36,7 +36,7 @@ export function Footer() {
               className={styles.text}
               onClick={() => copyText("slaboszadriana@gmail.com", "email")}
             >
-              slaboszadriana@gmail.com
+              Email me
             </p>
             <div
               className={
@@ -65,7 +65,7 @@ export function Footer() {
             className={styles.text}
             onClick={() => copyText("+48 668954072", "phone")}
           >
-            +48 668954072
+            Call me
           </p>
           <div
             className={
