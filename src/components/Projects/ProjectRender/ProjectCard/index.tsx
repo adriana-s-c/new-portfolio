@@ -10,7 +10,7 @@ const WebsiteIcon = ({ mode }: { mode: string }) => {
       viewBox="0 0 20 20"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      className={mode === "light" ? styles.iconLight : styles.iconDark}
+      className={mode ? styles.iconLight : styles.iconDark}
     >
       <path
         fillRule="evenodd"
@@ -29,7 +29,7 @@ const DividerIcon = ({ mode }: { mode: string }) => {
       height="40.000000pt"
       viewBox="0 0 432.000000 40.000000"
       preserveAspectRatio="xMidYMid meet"
-      className={mode === "light" ? styles.dividerLight : styles.dividerDark}
+      className={mode ? styles.dividerLight : styles.dividerDark}
     >
       <g
         transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
@@ -55,7 +55,7 @@ const CodeIcon = ({ mode }: { mode: string }) => {
       height="800px"
       viewBox="0 -3 19 19"
       version="1.1"
-      className={mode === "light" ? styles.iconLight : styles.iconDark}
+      className={mode ? styles.iconLight : styles.iconDark}
     >
       <g id="Page-1" stroke="none" strokeWidth="1" fillRule="evenodd">
         <g
@@ -93,8 +93,7 @@ export function ProjectCard({
   website,
   id,
 }: ProjectCardProps) {
-  const { mode } = React.useContext(ThemeContext);
-  const isLightMode = mode === "light";
+  const { isLightMode } = React.useContext(ThemeContext);
 
   return (
     <div
@@ -108,7 +107,7 @@ export function ProjectCard({
         className={styles.previewImg}
       ></img>
       <div className={styles.textBox}>
-        <DividerIcon mode={mode} />
+        <DividerIcon mode={isLightMode} />
         <h3
           className={
             isLightMode ? styles.projectHeaderLight : styles.projectHeaderDark
@@ -128,14 +127,14 @@ export function ProjectCard({
             className={isLightMode ? styles.iconBoxLight : styles.iconBoxDark}
           >
             <a href={github} target="_blank" rel="noopener noreferrer">
-              <CodeIcon mode={mode} />
+              <CodeIcon mode={isLightMode} />
             </a>
           </div>
           <div
             className={isLightMode ? styles.iconBoxLight : styles.iconBoxDark}
           >
             <a href={website} target="_blank" rel="noopener noreferrer">
-              <WebsiteIcon mode={mode} />
+              <WebsiteIcon mode={isLightMode} />
             </a>
           </div>
         </div>

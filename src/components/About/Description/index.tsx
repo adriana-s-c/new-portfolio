@@ -27,7 +27,7 @@ function DotIcon({
       fill="#000000"
       xmlns="http://www.w3.org/2000/svg"
       className={
-        mode === "light"
+        mode
           ? activeDotId === numberId
             ? styles.activeDotLight
             : styles.unactiveDotLight
@@ -69,8 +69,7 @@ const aboutData = [
 export function Description() {
   const [textId, setTextId] = React.useState(1);
   const [activeDotId, setActiveDotId] = React.useState(1);
-  const { mode } = React.useContext(ThemeContext);
-  const isLightMode = mode === "light";
+  const { isLightMode } = React.useContext(ThemeContext);
 
   return (
     <div className={styles.box}>
@@ -102,21 +101,21 @@ export function Description() {
             activeDotId={activeDotId}
             setActiveDotId={setActiveDotId}
             setTextId={setTextId}
-            mode={mode}
+            mode={isLightMode}
           />
           <DotIcon
             numberId={2}
             activeDotId={activeDotId}
             setActiveDotId={setActiveDotId}
             setTextId={setTextId}
-            mode={mode}
+            mode={isLightMode}
           />
           <DotIcon
             numberId={3}
             activeDotId={activeDotId}
             setActiveDotId={setActiveDotId}
             setTextId={setTextId}
-            mode={mode}
+            mode={isLightMode}
           />
         </div>
       </div>

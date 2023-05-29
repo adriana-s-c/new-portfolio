@@ -3,9 +3,8 @@ import styles from "./index.module.css";
 import { ThemeContext } from "../../context";
 
 export function Footer() {
-  const { mode } = React.useContext(ThemeContext);
+  const { isLightMode } = React.useContext(ThemeContext);
   const [copied, setCopied] = React.useState("");
-  const isLightMode = mode === "light";
   const iconMode = isLightMode ? styles.iconLight : styles.iconDark;
 
   const copyText = (text: string, type: string) => {

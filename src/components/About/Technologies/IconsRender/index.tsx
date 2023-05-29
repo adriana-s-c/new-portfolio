@@ -7,7 +7,7 @@ import { ThemeContext } from "../../../../context";
 export function IconsRender() {
   const [scope, animate] = useAnimate();
   const isInView = useInView(scope, { once: true });
-  const { mode } = React.useContext(ThemeContext);
+  const { isLightMode } = React.useContext(ThemeContext);
 
   React.useEffect(() => {
     if (isInView) {
@@ -26,7 +26,7 @@ export function IconsRender() {
           <li key={icon.id} className={styles.icon}>
             {!icon.darkIcon
               ? icon.lightIcon
-              : mode === "light"
+              : isLightMode
               ? icon.lightIcon
               : icon.darkIcon}
           </li>
