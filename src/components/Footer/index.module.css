@@ -68,6 +68,72 @@
   text-align: center;
   margin-left: 30px;
 }
+.copiedAlertEmail {
+  background: #494e5f;
+  color: #f8ebe2;
+  border-radius: 4px;
+  content: "Copied!";
+  bottom: 50px;
+  left: calc((100% - 160px) / 2);
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}
+
+.copiedAlertPhone {
+  background: #494e5f;
+  color: #f8ebe2;
+  border-radius: 4px;
+  content: "Copied!";
+  bottom: 50px;
+  right: 300px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}
+.copiedAlertHiddenEmail {
+  background: #494e5f;
+  color: #f8ebe2;
+  border-radius: 4px;
+  content: "Copied!";
+  bottom: 50px;
+  left: calc((100% - 160px) / 2);
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}
+
+.copiedAlertHiddenPhone {
+  background: #494e5f;
+  color: #f8ebe2;
+  border-radius: 4px;
+  content: "Copied!";
+  bottom: 50px;
+  right: 300px;
+  position: absolute;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;
+  -moz-transition: opacity 1s linear;
+  -o-transition: opacity 1s linear;
+}
 
 .contactBox {
   display: flex;
