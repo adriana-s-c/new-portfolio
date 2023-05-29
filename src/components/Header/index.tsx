@@ -20,7 +20,7 @@ export function Header() {
             <div>Portfolio</div>
           </div>
           <div className={isModeLight ? styles.secondLight : styles.secondDark}>
-            <div>Portolio</div>
+            <div>Portfolio</div>
           </div>
           <div className={isModeLight ? styles.thirdLight : styles.thirdDark}>
             <div>Portfolio</div>
