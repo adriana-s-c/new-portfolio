@@ -4,7 +4,11 @@ import { Header, About, ThemeMode, Projects, Footer } from "./components";
 import { ThemeContext } from "./context";
 
 function App() {
-  const [isLightMode, toggle] = React.useReducer((mode) => !mode, true);
+  const isDarkMode =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const [isLightMode, toggle] = React.useReducer((mode) => !mode, !isDarkMode);
 
   return (
     <ThemeContext.Provider value={{ isLightMode, toggle }}>
