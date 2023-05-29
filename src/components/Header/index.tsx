@@ -3,26 +3,25 @@ import styles from "./index.module.css";
 import { ThemeContext } from "../../context";
 
 export function Header() {
-  const { mode } = React.useContext(ThemeContext);
-  const isModeLight = mode === "light";
+  const { isLightMode } = React.useContext(ThemeContext);
 
   return (
-    <div className={isModeLight ? styles.boxLight : styles.boxDark}>
+    <div className={isLightMode ? styles.boxLight : styles.boxDark}>
       <div
         className={
-          isModeLight
+          isLightMode
             ? styles.animationContainerLight
             : styles.animationContainerDark
         }
       >
         <section className={styles.animation}>
-          <div className={isModeLight ? styles.firstLight : styles.firstDark}>
+          <div className={isLightMode ? styles.firstLight : styles.firstDark}>
             <div>Portfolio</div>
           </div>
-          <div className={isModeLight ? styles.secondLight : styles.secondDark}>
+          <div className={isLightMode ? styles.secondLight : styles.secondDark}>
             <div>Portfolio</div>
           </div>
-          <div className={isModeLight ? styles.thirdLight : styles.thirdDark}>
+          <div className={isLightMode ? styles.thirdLight : styles.thirdDark}>
             <div>Portfolio</div>
           </div>
         </section>

@@ -4,8 +4,7 @@ import styles from "./index.module.css";
 import { ProjectRender } from "./ProjectRender";
 
 export function Projects() {
-  const { mode } = React.useContext(ThemeContext);
-  const isLightMode = mode === "light";
+  const { isLightMode } = React.useContext(ThemeContext);
 
   return (
     <div className={styles.box}>

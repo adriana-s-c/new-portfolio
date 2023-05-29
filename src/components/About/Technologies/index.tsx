@@ -4,8 +4,7 @@ import { IconsRender } from "./IconsRender";
 import styles from "./index.module.css";
 
 export function Technologies() {
-  const { mode } = React.useContext(ThemeContext);
-  const isModeLight = mode === "light";
+  const { isLightMode } = React.useContext(ThemeContext);
 
   return (
     <div className={styles.box}>
@@ -16,7 +15,7 @@ export function Technologies() {
         height="40.000000pt"
         viewBox="0 0 432.000000 40.000000"
         preserveAspectRatio="xMidYMid meet"
-        className={isModeLight ? styles.dividerLight : styles.dividerDark}
+        className={isLightMode ? styles.dividerLight : styles.dividerDark}
       >
         <g
           transform="translate(0.000000,40.000000) scale(0.100000,-0.100000)"
@@ -32,7 +31,7 @@ export function Technologies() {
           />
         </g>
       </svg>
-      <h4 className={isModeLight ? styles.headingLight : styles.headingDark}>
+      <h4 className={isLightMode ? styles.headingLight : styles.headingDark}>
         What I've used so far
       </h4>
       <IconsRender />

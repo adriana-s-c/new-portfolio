@@ -4,11 +4,10 @@ import { Header, About, ThemeMode, Projects, Footer } from "./components";
 import { ThemeContext } from "./context";
 
 function App() {
-  const [mode, setMode] = React.useState("light");
-  const isLightMode = mode === "light";
+  const [isLightMode, toggle] = React.useReducer((mode) => !mode, true);
 
   return (
-    <ThemeContext.Provider value={{ mode, setMode }}>
+    <ThemeContext.Provider value={{ isLightMode, toggle }}>
       <div className={isLightMode ? styles.boxLight : styles.boxDark}>
         <Header />
         <ThemeMode />

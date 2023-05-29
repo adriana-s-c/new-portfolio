@@ -9,11 +9,11 @@ import { Technologies } from "./Technologies";
 import { ThemeContext } from "../../context";
 
 export function About() {
-  const { mode } = React.useContext(ThemeContext);
+  const { isLightMode } = React.useContext(ThemeContext);
 
   return (
     <div className={styles.box}>
-      {mode === "light" ? (
+      {isLightMode ? (
         <img
           className={styles.topDivider}
           src={topDividerLight}
@@ -26,13 +26,11 @@ export function About() {
           alt="Top divider"
         />
       )}
-      <div
-        className={mode === "light" ? styles.textBoxLight : styles.textBoxDark}
-      >
+      <div className={isLightMode ? styles.textBoxLight : styles.textBoxDark}>
         <Description />
         <Technologies />
       </div>
-      {mode === "light" ? (
+      {isLightMode ? (
         <img
           className={styles.topDivider}
           src={bottomDividerLight}
