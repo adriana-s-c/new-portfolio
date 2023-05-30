@@ -52,7 +52,6 @@
   top: 4px;
   width: 30px;
   height: 30px;
-  /* transition: 0.4s; */
 }
 
 .darkIcon {
@@ -61,5 +60,15 @@
   top: 4px;
   width: 30px;
   height: 30px;
-  /* transition: 0.4s; */
+}
+
+@media (max-width: 1050px) {
+  .boxLight {
+    top: 20px;
+    right: 20px;
+  }
+  .boxDark {
+    top: 20px;
+    right: 20px;
+  }
 }

@@ -34,3 +34,11 @@
   margin: 0px;
   justify-content: center;
 }
+@media (max-width: 1200px) {
+  .headerLight {
+    font-size: 76px;
+  }
+  .headerDark {
+    font-size: 76px;
+  }
+}

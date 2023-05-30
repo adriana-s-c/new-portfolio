@@ -6,3 +6,9 @@
 .projectContainer {
   margin-bottom: 200px;
 }
+
+@media (max-width: 850px) {
+  .projectContainer {
+    margin-bottom: 130px;
+  }
+}

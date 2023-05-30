@@ -23,7 +23,7 @@ export function IconsRender() {
     <ul ref={scope} className={styles.box}>
       {Icons.map((icon: any) => {
         return (
-          <li key={icon.id} className={styles.icon}>
+          <li key={icon.id} className={styles.icon} aria-label={icon.name}>
             {!icon.darkIcon
               ? icon.lightIcon
               : isLightMode

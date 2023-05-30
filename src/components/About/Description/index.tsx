@@ -79,7 +79,7 @@ export function Description() {
       <h2 className={isLightMode ? styles.nameLight : styles.nameDark}>
         Adriana Słabosz
       </h2>
-      <img src={profileImage} alt="WebPage Author" className={styles.image} />
+      <div className={styles.image} aria-label="WebPage Author" />
       <div className={styles.paragraphBox}>
         <div
           className={

@@ -8,6 +8,25 @@
   font-family: "Wix Madefor Text";
   margin-top: -400px;
 }
+
+.topDividerLight {
+  background-image: url(../../images/divider/lightTop.png);
+  width: 100%;
+  height: 307px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+}
+
+.topDividerDark {
+  background-image: url(../../images/divider/darkTop.png);
+  width: 100%;
+  height: 307px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -100px;
+}
+
 .textBoxLight {
   background-color: #f8ebe2;
 }
@@ -23,4 +42,33 @@
 .bottomDivider {
   width: 100%;
   height: 390px;
+}
+
+.bottomDividerLight {
+  background-image: url(../../images/divider/lightFooter.png);
+  width: 100%;
+  height: 307px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  rotate: 180deg;
+}
+.bottomDividerDark {
+  background-image: url(../../images/divider/darkFooter.png);
+  width: 100%;
+  height: 307px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  rotate: 180deg;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    height: 1700px;
+  }
+}
+
+@media (max-width: 750px) {
+  .box {
+    height: 1500px;
+  }
 }
