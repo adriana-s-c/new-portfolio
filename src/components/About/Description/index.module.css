@@ -39,8 +39,13 @@
 }
 
 .image {
+  position: relative;
+  left: calc((100% - 300px) / 2);
   height: 300px;
   width: 300px;
+  background-image: url(../../../images/profileImage.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 100%;
   margin-top: 30px;
 }
@@ -89,4 +94,56 @@
   line-height: 40px;
   text-align: center;
   color: #f1f1f1;
+}
+
+@media (max-width: 1200px) {
+  .image {
+    height: 250px;
+    width: 250px;
+  }
+  .nameLight {
+    font-size: 60px;
+  }
+  .nameDark {
+    font-size: 60px;
+  }
+  .paragraphBox {
+    margin-top: 30px;
+  }
+  .contentBoxDark {
+    height: 170px;
+  }
+  .contentBoxLight {
+    height: 170px;
+  }
+}
+
+@media (max-width: 750px) {
+  .box {
+    height: 750px;
+  }
+  .headingLight {
+    font-size: 36px;
+  }
+  .headingDark {
+    font-size: 36px;
+  }
+  .nameLight {
+    font-size: 54px;
+  }
+  .nameDark {
+    font-size: 54px;
+  }
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+  .paragraphBox {
+    width: 400px;
+    left: calc((100% - 400px) / 2);
+  }
+  .contentBoxLight {
+    height: 200px;
+    font-size: 16px;
+  }
 }

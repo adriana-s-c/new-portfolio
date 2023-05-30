@@ -149,3 +149,106 @@
   text-align: center;
   margin: 0px;
 }
+
+@media (max-width: 1200px) {
+  .previewImg {
+    width: 488px;
+    height: 286px;
+    margin-top: 30px;
+  }
+  .projectHeaderLight {
+    font-size: 42px;
+  }
+  .projectHeaderDark {
+    font-size: 42px;
+  }
+  .projectBoxRight {
+    width: 1050px;
+    left: calc((100% - 1050px) / 2);
+  }
+  .projectBoxLeft {
+    width: 1050px;
+    left: calc((100% - 1050px) / 2);
+  }
+}
+
+@media (max-width: 1050px) {
+  .previewImg {
+    width: 408px;
+    height: 236px;
+    margin-top: 60px;
+  }
+  .projectBoxRight {
+    width: 830px;
+    left: calc((100% - 830px) / 2);
+  }
+  .projectBoxLeft {
+    width: 830px;
+    left: calc((100% - 830px) / 2);
+  }
+  .projectHeaderLight {
+    font-size: 38px;
+  }
+  .textBox {
+    width: 300px;
+  }
+  .iconBoxLight {
+    width: 40px;
+    height: 40px;
+  }
+  .iconLight {
+    width: 20px;
+    height: 20px;
+  }
+  .iconBoxDark {
+    width: 40px;
+    height: 40px;
+  }
+  .iconDark {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .projectBoxLeft {
+    flex-direction: column;
+    width: 528px;
+    height: 640px;
+    left: calc((100% - 528px) / 2);
+  }
+  .projectBoxRight {
+    flex-direction: column;
+    width: 528px;
+    height: 640px;
+    left: calc((100% - 528px) / 2);
+  }
+  .textBox {
+    width: 528px;
+    margin-top: 50px;
+  }
+  .previewImg {
+    width: 528px;
+    height: 356px;
+    left: 100px;
+  }
+  .iconBoxLight {
+    width: 50px;
+    height: 50px;
+  }
+  .iconLight {
+    width: 30px;
+    height: 30px;
+  }
+  .iconBoxDark {
+    width: 50px;
+    height: 50px;
+  }
+  .iconDark {
+    width: 30px;
+    height: 30px;
+  }
+  .linkBox {
+    margin-top: 30px;
+  }
+}

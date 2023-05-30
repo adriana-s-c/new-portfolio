@@ -34,3 +34,27 @@
   margin: 0px;
   margin-top: 34px;
 }
+
+@media (max-width: 1200px) {
+  .box {
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 750px) {
+  .headingDark {
+    font-size: 28px;
+  }
+  .headingLight {
+    font-size: 28px;
+  }
+  .dividerLight {
+    height: 8px;
+    width: 100px;
+    fill: #060b0b;
+  }
+  .dividerDark {
+    height: 8px;
+    width: 100px;
+  }
+}

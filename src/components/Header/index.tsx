@@ -14,7 +14,10 @@ export function Header() {
             : styles.animationContainerDark
         }
       >
-        <section className={styles.animation}>
+        <section
+          className={styles.animation}
+          onClick={() => window.location.reload()}
+        >
           <div className={isLightMode ? styles.firstLight : styles.firstDark}>
             <div>Portfolio</div>
           </div>

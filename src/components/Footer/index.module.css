@@ -140,3 +140,12 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media (max-width: 1000px) {
+  .boxLight {
+    background-position: -200px 20px;
+  }
+  .boxDark {
+    background-position: -200px 20px;
+  }
+}

@@ -7,8 +7,6 @@ export const Icons = [
         fill="#000000"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="60px"
-        height="60px"
         viewBox="0 0 512 512"
         enableBackground="new 0 0 512 512"
       >
@@ -32,8 +30,6 @@ export const Icons = [
         fill="#f1f1f1"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="60px"
-        height="60px"
         viewBox="0 0 512 512"
         enableBackground="new 0 0 512 512"
       >
@@ -61,8 +57,6 @@ export const Icons = [
         fill="#000000"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="60px"
-        height="60px"
         viewBox="0 0 512 512"
         enableBackground="new 0 0 512 512"
       >
@@ -85,8 +79,6 @@ export const Icons = [
         fill="#f1f1f1"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        width="60px"
-        height="60px"
         viewBox="0 0 512 512"
         enableBackground="new 0 0 512 512"
       >
@@ -107,7 +99,7 @@ export const Icons = [
   },
   {
     id: 2,
-    name: "JS",
+    name: "JavaScript",
     lightIcon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -124,13 +116,7 @@ export const Icons = [
     id: 3,
     name: "React",
     lightIcon: (
-      <svg
-        width="60px"
-        height="60px"
-        viewBox="0 0 32 32"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
           fill="#53C1DE"
@@ -146,15 +132,9 @@ export const Icons = [
   },
   {
     id: 4,
-    name: "Visual Studio lightIcon",
+    name: "Visual Studio",
     lightIcon: (
-      <svg
-        width="60px"
-        height="60px"
-        viewBox="0 0 32 32"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M21.0016 3.11679C21.0016 2.23783 20.0175 2.23782 19.5801 2.34769C20.1924 1.86426 20.9105 1.98147 21.1656 2.12796L27.079 5.02747C27.6424 5.30375 27.9998 5.8786 27.9998 6.50857V25.5831C27.9998 26.2215 27.6329 26.8025 27.058 27.0743L21.4937 29.7054C21.1109 29.8701 20.2799 30.2767 19.5801 29.7053C20.4549 29.8702 20.9287 29.2476 21.0016 28.8264V3.11679Z"
           fill="url(#paint0_linear_87_8101)"
@@ -214,8 +194,6 @@ export const Icons = [
     name: "Git",
     lightIcon: (
       <svg
-        width="60px"
-        height="60px"
         viewBox="0 0 24 24"
         fill="#000000"
         xmlns="http://www.w3.org/2000/svg"
@@ -227,8 +205,6 @@ export const Icons = [
     ),
     darkIcon: (
       <svg
-        width="60px"
-        height="60px"
         viewBox="0 0 24 24"
         fill="#f1f1f1"
         xmlns="http://www.w3.org/2000/svg"
@@ -243,13 +219,7 @@ export const Icons = [
     id: 6,
     name: "Github",
     lightIcon: (
-      <svg
-        width="60px"
-        height="60px"
-        viewBox="0 0 20 20"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <g id="Page-1" stroke="none" strokeWidth="1" fill="#000000">
           <g
             id="Dribbble-Light-Preview"
@@ -266,13 +236,7 @@ export const Icons = [
       </svg>
     ),
     darkIcon: (
-      <svg
-        width="60px"
-        height="60px"
-        viewBox="0 0 20 20"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <g id="Page-1" stroke="none" strokeWidth="1" fill="#F1F1F1">
           <g
             id="Dribbble-Light-Preview"
@@ -295,8 +259,6 @@ export const Icons = [
     lightIcon: (
       <svg
         fill="#000000"
-        width="60px"
-        height="60px"
         viewBox="0 0 32 32"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -307,8 +269,6 @@ export const Icons = [
     darkIcon: (
       <svg
         fill="#F1F1F1"
-        width="60px"
-        height="60px"
         viewBox="0 0 32 32"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -339,13 +299,7 @@ export const Icons = [
     id: 9,
     name: "Figma",
     lightIcon: (
-      <svg
-        width="60px"
-        height="60px"
-        viewBox="0 0 32 32"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -381,7 +335,7 @@ export const Icons = [
   },
   {
     id: 10,
-    name: "ChakraUi",
+    name: "ChakraUI",
     lightIcon: (
       <svg viewBox="0 0 257 257" xmlns="http://www.w3.org/2000/svg">
         <rect width="257" height="257" rx="128.5" fill="url(#a)" />
@@ -408,12 +362,7 @@ export const Icons = [
     id: 11,
     name: "Formik",
     lightIcon: (
-      <svg
-        height="60px"
-        viewBox="0 0 34.7 34.7"
-        width="60px"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="0 0 34.7 34.7" xmlns="http://www.w3.org/2000/svg">
         <path
           d="m-.0001948.00485276h34.699667v34.699667h-34.699667z"
           fill="#0051cd"
@@ -446,8 +395,6 @@ export const Icons = [
     name: "Express",
     lightIcon: (
       <svg
-        width="60px"
-        height="60px"
         viewBox="0 -181.5 512 512"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -463,8 +410,6 @@ export const Icons = [
     ),
     darkIcon: (
       <svg
-        width="60px"
-        height="60px"
         viewBox="0 -181.5 512 512"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -483,12 +428,7 @@ export const Icons = [
     id: 13,
     name: "Ngrok",
     lightIcon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="60"
-        height="60"
-        viewBox="0 0 24 24"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           fill="#00000"
           d="M18.951 7.598v6.713h1.463v-1.69l1.61 1.69H24v-.08l-2.123-2.153l2.002-1.846v-.07H21.95l-1.537 1.496v-4.06zm-2.93 2.41a2.626 2.626 0 0 0-1.787.635a2.049 2.049 0 0 0-.703 1.556c-.002.75.311 1.287.7 1.643c.526.478 1.221.626 1.767.623c.666 0 1.34-.195 1.805-.62c.521-.483.713-1.029.713-1.607c0-.73-.31-1.247-.71-1.603c-.553-.475-1.202-.628-1.785-.627zm-9.062.039c-1.188-.005-2.1.977-2.104 2.25c-.004 1.296.908 2.108 2.032 2.096c.664.002.983-.244 1.308-.541v1.193h-1.37l-1.03 1.158v.2H9.66v-6.24H8.195v.435c-.381-.408-.772-.542-1.236-.551zm-4.805.11l-.691.786v-.771H0v4.15h1.463v-2.799c.547.002 1.023-.002 1.49-.003v2.802h1.465v-2.595c-.004-.547-.1-.819-.307-1.061a1.431 1.431 0 0 0-.914-.51zm8.114.005v4.15h1.468l.002-2.779h1.065l1.164-1.314v-.057h-1.598l-.635.715v-.715zm-2.946 1.115c.504 0 .96.444.948.948a.956.956 0 0 1-.948.945c-.523 0-.931-.403-.947-.945c-.002-.52.443-.94.947-.948zm8.703.001c.525 0 .94.434.944.95c-.027.544-.42.95-.944.95s-.934-.417-.95-.95a.955.955 0 0 1 .95-.95z"
@@ -496,12 +436,7 @@ export const Icons = [
       </svg>
     ),
     darkIcon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="60"
-        height="60"
-        viewBox="0 0 24 24"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path
           fill="#F1F1F1"
           d="M18.951 7.598v6.713h1.463v-1.69l1.61 1.69H24v-.08l-2.123-2.153l2.002-1.846v-.07H21.95l-1.537 1.496v-4.06zm-2.93 2.41a2.626 2.626 0 0 0-1.787.635a2.049 2.049 0 0 0-.703 1.556c-.002.75.311 1.287.7 1.643c.526.478 1.221.626 1.767.623c.666 0 1.34-.195 1.805-.62c.521-.483.713-1.029.713-1.607c0-.73-.31-1.247-.71-1.603c-.553-.475-1.202-.628-1.785-.627zm-9.062.039c-1.188-.005-2.1.977-2.104 2.25c-.004 1.296.908 2.108 2.032 2.096c.664.002.983-.244 1.308-.541v1.193h-1.37l-1.03 1.158v.2H9.66v-6.24H8.195v.435c-.381-.408-.772-.542-1.236-.551zm-4.805.11l-.691.786v-.771H0v4.15h1.463v-2.799c.547.002 1.023-.002 1.49-.003v2.802h1.465v-2.595c-.004-.547-.1-.819-.307-1.061a1.431 1.431 0 0 0-.914-.51zm8.114.005v4.15h1.468l.002-2.779h1.065l1.164-1.314v-.057h-1.598l-.635.715v-.715zm-2.946 1.115c.504 0 .96.444.948.948a.956.956 0 0 1-.948.945c-.523 0-.931-.403-.947-.945c-.002-.52.443-.94.947-.948zm8.703.001c.525 0 .94.434.944.95c-.027.544-.42.95-.944.95s-.934-.417-.95-.95a.955.955 0 0 1 .95-.95z"
@@ -513,12 +448,7 @@ export const Icons = [
     id: 14,
     name: "date-fns",
     lightIcon: (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 176 33"
-        width="60"
-        height="60"
-      >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 33">
         <g fill="#770C56" fillRule="evenodd">
           <path
             d="M.1 16.5A22.7 22.7 0 017.1 0h4.4a22 22 0 00-7 16.5 22 22 0 007 16.4H7A22.5 22.5 0 01.1 16.5zm40.2 0a22.7 22.7 0 01-7 16.4H29a22 22 0 007-16.4 22 22 0 00-7-16.5h4.5a22.5 22.5 0 016.9 16.5z"
@@ -534,12 +464,7 @@ export const Icons = [
     id: 15,
     name: "Framer Motion",
     lightIcon: (
-      <svg
-        height="60"
-        viewBox="3.7 3.7 43.6 43.6"
-        width="60"
-        xmlns="http://www.w3.org/2000/svg"
-      >
+      <svg viewBox="3.7 3.7 43.6 43.6" xmlns="http://www.w3.org/2000/svg">
         <path
           d="m47.3 3.7v21.8l-10.9 10.9-10.9 10.9-10.9-10.9 10.9-10.9v.1-.1z"
           fill="#59529d"
@@ -558,8 +483,6 @@ export const Icons = [
     lightIcon: (
       <svg
         fill="#000000"
-        width="60px"
-        height="60px"
         viewBox="0 0 512 512"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -569,8 +492,6 @@ export const Icons = [
     darkIcon: (
       <svg
         fill="#f1f1f1"
-        width="60px"
-        height="60px"
         viewBox="0 0 512 512"
         xmlns="http://www.w3.org/2000/svg"
       >

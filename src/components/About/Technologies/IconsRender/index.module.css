@@ -12,3 +12,10 @@
   width: 60px;
   opacity: 0;
 }
+
+@media (max-width: 750px) {
+  .icon {
+    height: 50px;
+    width: 50px;
+  }
+}
