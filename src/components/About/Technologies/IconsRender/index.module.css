@@ -19,3 +19,9 @@
     width: 50px;
   }
 }
+
+@media (max-width: 450px) {
+  .box {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

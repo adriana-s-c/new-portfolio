@@ -12,3 +12,24 @@
     margin-bottom: 130px;
   }
 }
+
+@media (max-width: 580px) {
+  .projectContainer {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 460px) {
+  .projectContainer {
+    margin-bottom: 30px;
+  }
+  .box {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  .box {
+    margin-top: 0px;
+  }
+}

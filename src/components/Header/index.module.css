@@ -188,16 +188,68 @@
     background-position: -150px -40px;
   }
   .animationContainerLight {
-    position: absolute;
     top: 90px;
     left: 90px;
   }
   .animationContainerDark {
-    position: absolute;
     top: 90px;
     left: 90px;
   }
   .boxDark {
     background-position: -250px -40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .boxLight {
+    background-position: -420px 0px;
+  }
+  .animationContainerLight {
+    left: calc((100% - 380px) / 2);
+  }
+  .boxDark {
+    background-position: -600px -120px;
+  }
+  .animationContainerDark {
+    left: calc((100% - 380px) / 2);
+  }
+}
+
+@media (max-width: 450px) {
+  .animationContainerLight {
+    font-size: 50px;
+    left: calc((100% - 320px) / 2);
+    top: 110px;
+  }
+  .animationContainerDark {
+    font-size: 50px;
+    left: calc((100% - 320px) / 2);
+    top: 110px;
+  }
+  .animation {
+    height: 70px;
+  }
+  .boxLight {
+    background-position: -540px 0px;
+  }
+  .boxDark {
+    background-position: -670px -120px;
+  }
+}
+
+@media (max-width: 370px) {
+  .animationContainerLight {
+    font-size: 34px;
+    left: calc((100% - 261px) / 2);
+  }
+  .animationContainerDark {
+    font-size: 34px;
+    left: calc((100% - 261px) / 2);
+  }
+  .animation {
+    height: 50px;
+  }
+  .boxLight {
+    background-position: -595px 0px;
   }
 }

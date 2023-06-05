@@ -36,6 +36,11 @@
   color: #f1f1f1;
 }
 
+.textBox {
+  display: flex;
+  flex-direction: row;
+}
+
 .heading {
   font-family: "Wix Madefor Text";
   font-style: normal;
@@ -49,12 +54,16 @@
 
 .iconLight {
   fill: #494e5f;
+  width: 45px;
+  height: 45px;
 }
 .iconLight:hover {
   fill: white;
 }
 
 .iconDark {
+  width: 45px;
+  height: 45px;
   fill: #f1f1f1;
 }
 .iconDark:hover {
@@ -147,5 +156,29 @@
   }
   .boxDark {
     background-position: -200px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .heading {
+    font-size: 20px;
+  }
+  .text {
+    font-size: 12px;
+  }
+  .iconDark {
+    width: 35px;
+    height: 35px;
+  }
+  .iconLight {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 580px) {
+  .textBox {
+    flex-direction: column;
+    margin-top: 20px;
   }
 }

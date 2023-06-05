@@ -252,3 +252,91 @@
     margin-top: 30px;
   }
 }
+
+@media (max-width: 700px) {
+  .projectBoxLeft {
+    width: 488px;
+    left: calc((100% - 488px) / 2);
+  }
+  .projectBoxRight {
+    width: 488px;
+    left: calc((100% - 488px) / 2);
+  }
+  .textBox {
+    width: 488px;
+  }
+  .previewImg {
+    width: 488px;
+    height: 306px;
+  }
+}
+
+@media (max-width: 580px) {
+  .projectBoxLeft {
+    width: 418px;
+    left: calc((100% - 418px) / 2);
+  }
+  .projectBoxRight {
+    width: 418px;
+    left: calc((100% - 418px) / 2);
+  }
+  .textBox {
+    width: 418px;
+  }
+  .previewImg {
+    width: 418px;
+    height: 276px;
+  }
+  .iconBoxLight {
+    width: 45px;
+    height: 45px;
+  }
+  .iconLight {
+    width: 25px;
+    height: 25px;
+  }
+  .iconBoxDark {
+    width: 45px;
+    height: 45px;
+  }
+  .iconDark {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (max-width: 460px) {
+  .projectBoxLeft {
+    width: 348px;
+    left: calc((100% - 348px) / 2);
+  }
+  .projectBoxRight {
+    width: 348px;
+    left: calc((100% - 348px) / 2);
+  }
+  .textBox {
+    width: 348px;
+  }
+  .previewImg {
+    width: 348px;
+    height: 206px;
+  }
+}
+
+@media (max-width: 370px) {
+  .previewImg {
+    width: 308px;
+    height: 186px;
+  }
+  .projectBoxLeft {
+    width: 308px;
+    left: calc((100% - 308px) / 2);
+  }
+  .projectBoxRight {
+    width: 308px;
+    left: calc((100% - 308px) / 2);
+  }
+  .textBox {
+    width: 308px;
+  }
+}
