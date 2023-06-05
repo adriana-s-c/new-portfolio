@@ -100,6 +100,7 @@
   .image {
     height: 250px;
     width: 250px;
+    left: calc((100% - 250px) / 2);
   }
   .nameLight {
     font-size: 60px;
@@ -137,6 +138,7 @@
   .image {
     width: 200px;
     height: 200px;
+    left: calc((100% - 200px) / 2);
   }
   .paragraphBox {
     width: 400px;
@@ -145,5 +147,59 @@
   .contentBoxLight {
     height: 200px;
     font-size: 16px;
+  }
+  .contentBoxDark {
+    height: 200px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 460px) {
+  .box {
+    height: 670px;
+  }
+  .headingLight {
+    font-size: 26px;
+  }
+  .headingDark {
+    font-size: 26px;
+  }
+  .nameLight {
+    font-size: 44px;
+  }
+  .nameDark {
+    font-size: 44px;
+  }
+  .image {
+    width: 160px;
+    height: 160px;
+    left: calc((100% - 160px) / 2);
+  }
+  .contentBoxLight {
+    font-size: 14px;
+    height: 250px;
+  }
+  .contentBoxDark {
+    font-size: 14px;
+    height: 250px;
+  }
+  .paragraphBox {
+    width: 300px;
+    left: calc((100% - 300px) / 2);
+  }
+}
+
+@media (max-width: 370px) {
+  .nameLight {
+    font-size: 30px;
+  }
+  .nameDark {
+    font-size: 30px;
+  }
+  .headingLight {
+    font-size: 18px;
+  }
+  .headingDark {
+    font-size: 18px;
   }
 }

@@ -62,6 +62,15 @@
 }
 
 @media (max-width: 1200px) {
+  .topDividerLight {
+    background-position: 0 0;
+  }
+  .topDividerDark {
+    background-position: 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
   .box {
     height: 1700px;
   }

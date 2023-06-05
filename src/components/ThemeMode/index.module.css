@@ -72,3 +72,31 @@
     right: 20px;
   }
 }
+
+@media (max-width: 370px) {
+  .boxLight {
+    height: 26px;
+    width: 54px;
+  }
+  .boxDark {
+    height: 26px;
+    width: 54px;
+  }
+  .lightIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .darkIcon {
+    width: 20px;
+    height: 20px;
+  }
+  .lightCircle {
+    width: 26px;
+    height: 26px;
+  }
+  .darkCircle {
+    width: 26px;
+    height: 26px;
+  }
+}
