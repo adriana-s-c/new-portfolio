@@ -9,11 +9,13 @@ export function About() {
 
   return (
     <div className={styles.box}>
-      {isLightMode ? (
-        <div className={styles.topDividerLight} />
-      ) : (
-        <div className={styles.topDividerDark} />
-      )}
+      <div className={styles.topDividerBox}>
+        {isLightMode ? (
+          <div className={styles.topDividerLight} />
+        ) : (
+          <div className={styles.topDividerDark} />
+        )}
+      </div>
       <div className={isLightMode ? styles.textBoxLight : styles.textBoxDark}>
         <Description />
         <Technologies />
