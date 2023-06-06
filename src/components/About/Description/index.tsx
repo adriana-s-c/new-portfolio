@@ -61,7 +61,7 @@ const aboutData = [
   {
     id: 3,
     content:
-      "Learning has become a constant part of my life. For instance, recently I learnt how to renovate wooden garden furniture. I particularly take pleasure in learning from books. Especially interesting for me are the ones covering biographies, self-help, popular science, politics and social sciences or traveling.",
+      "Learning has become a constant part of my life. For instance, recently renovated wooden garden furniture on my own. I particularly take pleasure in learning from books. Especially interesting for me are the ones covering biographies, self-help, popular science, politics and social sciences or traveling.",
   },
 ];
 

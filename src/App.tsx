@@ -5,10 +5,18 @@ import { ThemeContext } from "./context";
 
 function App() {
   const isDarkMode =
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches;
+    localStorage.getItem("theme-mode") === "null"
+      ? window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      : localStorage.getItem("theme-mode") === "light"
+      ? true
+      : false;
 
-  const [isLightMode, toggle] = React.useReducer((mode) => !mode, !isDarkMode);
+  const [isLightMode, toggle] = React.useReducer((mode) => !mode, isDarkMode);
+
+  React.useEffect(() => {
+    localStorage.setItem("theme-mode", isLightMode === true ? "light" : "dark");
+  }, [isLightMode]);
 
   return (
     <ThemeContext.Provider value={{ isLightMode, toggle }}>
