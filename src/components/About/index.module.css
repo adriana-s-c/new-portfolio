@@ -87,6 +87,12 @@
 
 @media (max-width: 750px) {
   .box {
-    height: 1500px;
+    height: 1570px;
+  }
+}
+
+@media (max-width: 450px) {
+  .box {
+    height: 1520px;
   }
 }
