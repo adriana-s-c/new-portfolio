@@ -8,7 +8,6 @@
   left: calc((100% - 661px) / 2);
   margin-top: 52px;
   margin-bottom: 52px;
-  font-family: "Wix Madefor Text";
 }
 .headingLight {
   font-size: 46px;
@@ -80,7 +79,7 @@
 
 .contentBoxLight {
   height: 200px;
-  font-family: "Wix Madefor Text";
+
   font-size: 20px;
   line-height: 40px;
   text-align: center;
@@ -89,7 +88,6 @@
 
 .contentBoxDark {
   height: 200px;
-  font-family: "Wix Madefor Text";
   font-size: 20px;
   line-height: 40px;
   text-align: center;

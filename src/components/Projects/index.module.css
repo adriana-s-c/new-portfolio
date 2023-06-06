@@ -4,9 +4,8 @@
 }
 
 .headerLight {
-  font-family: "Wix Madefor Text";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 96px;
   line-height: 124px;
   display: flex;
@@ -17,12 +16,12 @@
   text-transform: uppercase;
   margin: 0px;
   justify-content: center;
+  margin-bottom: 200px;
 }
 
 .headerDark {
-  font-family: "Wix Madefor Text";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 96px;
   line-height: 124px;
   display: flex;
@@ -33,22 +32,38 @@
   text-transform: uppercase;
   margin: 0px;
   justify-content: center;
+  margin-bottom: 200px;
 }
 @media (max-width: 1200px) {
   .headerLight {
     font-size: 76px;
+    margin-bottom: 180px;
   }
   .headerDark {
     font-size: 76px;
+    margin-bottom: 180px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .headerLight {
+    font-size: 76px;
+    margin-bottom: 130px;
+  }
+  .headerDark {
+    font-size: 76px;
+    margin-bottom: 130px;
   }
 }
 
 @media (max-width: 700px) {
   .headerLight {
     font-size: 60px;
+    margin-bottom: 0px;
   }
   .headerDark {
     font-size: 60px;
+    margin-bottom: 0px;
   }
 }
 
