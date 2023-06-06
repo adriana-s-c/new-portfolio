@@ -51,17 +51,17 @@ const aboutData = [
   {
     id: 1,
     content:
-      "I am self-taught frontend developer. I started my Frontend journey about a year ago with learning CSS, HTML, JS. Then I moved on to React and recently I started learning TypeScript. ",
+      "I am self-taught frontend developer. I started my Frontend journey about a year ago with learning CSS, HTML, JavaScript. Then I moved on to React and recently I started learning TypeScript. Next on my list is learning about Frontend Testing and CSS preprocessors.",
   },
   {
     id: 2,
     content:
-      "It's been quite a learning journey for me and every project gave me a lot of satisfaction to complete, especially wheneber I encountered challenge to overcome. For learning, I use books, tutorials, free courses, blogs, chat and support groups. ",
+      "It's been quite a learning journey for me and every project gave me a lot of satisfaction to complete, especially the ones that created certain challenges. For learning I use pretty much every tool available: books, tutorials, free courses, blogs, forums, chat and support groups. ",
   },
   {
     id: 3,
     content:
-      "Learning has become a constant part of my life. I particularly take pleasure in learning from books. Especially interesting for me are the ones covering biographies, self-help, popular science, politics and social sciences or traveling. ",
+      "Learning has become a constant part of my life. For instance, recently I learnt how to renovate wooden garden furniture. I particularly take pleasure in learning from books. Especially interesting for me are the ones covering biographies, self-help, popular science, politics and social sciences or traveling.",
   },
 ];
 
