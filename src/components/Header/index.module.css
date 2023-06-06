@@ -63,7 +63,6 @@
 .animation {
   height: 100px;
   overflow: hidden;
-  margin-left: 1rem;
 }
 
 .animation > div > div {

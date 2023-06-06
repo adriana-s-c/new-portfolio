@@ -2,7 +2,6 @@ import styles from "./index.module.css";
 import * as React from "react";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../../../context";
-import profileImage from "../../../images/profileImage.jpeg";
 
 type DotIconProps = {
   numberId: number;
