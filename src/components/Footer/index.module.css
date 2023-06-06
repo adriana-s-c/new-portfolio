@@ -59,6 +59,7 @@
 }
 .iconLight:hover {
   fill: white;
+  transition: 0.4s;
 }
 
 .iconDark {
@@ -82,6 +83,7 @@
   color: #f8ebe2;
   border-radius: 4px;
   content: "Copied!";
+  margin-left: 9px;
   bottom: 50px;
   position: absolute;
   padding: 10px;
@@ -98,6 +100,7 @@
   color: #f8ebe2;
   border-radius: 4px;
   content: "Copied!";
+  margin-left: 9px;
   bottom: 50px;
   position: absolute;
   padding: 10px;
@@ -114,6 +117,7 @@
   color: #f8ebe2;
   border-radius: 4px;
   content: "Copied!";
+  margin-left: 16px;
   bottom: 50px;
   position: absolute;
   padding: 10px;
@@ -130,6 +134,7 @@
   color: #f8ebe2;
   border-radius: 4px;
   content: "Copied!";
+  margin-left: 16px;
   bottom: 50px;
   position: absolute;
   padding: 10px;
@@ -166,6 +171,18 @@
     width: 45px;
     height: 45px;
   }
+  .copiedAlertPhone {
+    margin-left: 15px;
+  }
+  .copiedAlertHiddenPhone {
+    margin-left: 15px;
+  }
+  .copiedAlertEmail {
+    margin-left: 8px;
+  }
+  .copiedAlertHiddenEmail {
+    margin-left: 8px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -182,6 +199,18 @@
   .iconLight {
     width: 35px;
     height: 35px;
+  }
+  .copiedAlertPhone {
+    margin-left: 10px;
+  }
+  .copiedAlertHiddenPhone {
+    margin-left: 10px;
+  }
+  .copiedAlertEmail {
+    margin-left: 5px;
+  }
+  .copiedAlertHiddenEmail {
+    margin-left: 5px;
   }
 }
 
