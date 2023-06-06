@@ -70,7 +70,6 @@
 }
 
 .iconLight {
-  padding: 8px;
   position: relative;
   padding: 10px;
   width: 30px;
@@ -132,8 +131,7 @@
 }
 
 .projectHeaderLight {
-  font-family: "Hannari";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -0.5px;
@@ -143,8 +141,7 @@
 }
 
 .projectHeaderDark {
-  font-family: "Hannari";
-  font-weight: 400;
+  font-weight: 500;
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -0.5px;
