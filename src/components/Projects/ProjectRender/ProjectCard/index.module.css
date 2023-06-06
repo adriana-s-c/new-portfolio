@@ -70,6 +70,7 @@
 }
 
 .iconLight {
+  padding: 8px;
   position: relative;
   padding: 10px;
   width: 30px;
@@ -87,9 +88,11 @@
 
 .iconLight:hover {
   fill: white;
+  transition: 0.4s;
 }
 .iconDark:hover {
   fill: #d76f00;
+  transition: 0.4s;
 }
 
 .descriptionLight {
