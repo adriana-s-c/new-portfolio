@@ -113,7 +113,7 @@ export function ProjectCard({
             isLightMode ? styles.projectHeaderLight : styles.projectHeaderDark
           }
         >
-          {title}
+          {title.replace(/-/g, "‑")}
         </h3>
         <p
           className={
