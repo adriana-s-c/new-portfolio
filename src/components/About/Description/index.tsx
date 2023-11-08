@@ -51,17 +51,17 @@ const aboutData = [
   {
     id: 1,
     content:
-      "I am self-taught frontend developer. I started my Frontend journey about a year ago with learning CSS, HTML, JavaScript. Then I moved on to React and recently I started learning TypeScript. Next on my list is learning about Frontend Testing and CSS preprocessors.",
+      "I am self-taught frontend developer. I started my Frontend journey about a year ago with learning CSS, HTML, JavaScript. Then I moved on to React and recently I started learning TypeScript. Lately, I've also been exploring SCSS to level up my styling skills. ",
   },
   {
     id: 2,
     content:
-      "It's been quite a learning journey for me and every project gave me a lot of satisfaction to complete, especially the ones that created certain challenges. For learning I use pretty much every tool available: books, tutorials, free courses, blogs, forums, chat and support groups. ",
+      "It's been quite a learning journey for me, and I find great joy in tackling challenging projects. I've used a wide range of resources for learning, from books and tutorials to free courses, blogs, forums, and online communities.",
   },
   {
     id: 3,
     content:
-      "Learning has become a constant part of my life. For instance, recently renovated wooden garden furniture on my own. I particularly take pleasure in learning from books. Especially interesting for me are the ones covering biographies, self-help, popular science, politics and social sciences or traveling.",
+      "Learning is a constant part of my life. I enjoy diverse subjects, from renovating wooden garden furniture to perfecting the art of making pierogi, often gaining knowledge from books. Reading is a cherished hobby of mine, with a keen interest in biographies, self-help, popular science, politics, social sciences, and travel literature.",
   },
 ];
 
