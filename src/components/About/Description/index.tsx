@@ -76,7 +76,7 @@ export function Description() {
         Hi! I'm
       </h3>
       <h2 className={isLightMode ? styles.nameLight : styles.nameDark}>
-        Adriana Słabosz
+        Adriana Słabosz-Czyż
       </h2>
       <div className={styles.image} aria-label="WebPage Author" />
       <div className={styles.paragraphBox}>
