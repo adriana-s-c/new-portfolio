@@ -1,6 +1,16 @@
 export const data = [
   {
     id: 1,
+    title: "Link Sharing App",
+    description:
+      "A biggest yet FrontendMentor.io challenge, which allowed me to practice working with image uploads, repeater fields, drag-and-drop. I created custom components for easier management of changes throughout development of app. I used libraries like DND-kit, hookform, react-avatar-editor, clsx. App is written in TypeScript using React and SCSS. ",
+    lightImage: "previewLink-Sharing-App-Light.jpg",
+    darkImage: "previewLink-Sharing-App-Dark.png",
+    github: "https://github.com/adriana-s-c/link-sharing-app",
+    website: "https://link-sharing-app-hazel.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Audiophile e-commerce website",
     description:
       "It is a big e-commerce Frontend Mentor challenge, which I completed based on a Figma project, using React, TypeScript, React Hook Form, React Modal, and SCSS. It is functional, as a user is able to put items in a cart, modify quantity, fill the form, and complete the order, all of that without the fear of losing progress after refreshing the page.",
@@ -10,7 +20,7 @@ export const data = [
     website: "https://audiophile-e-commerce-website-az.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     title: "Dine Restaurant Website",
     description:
       "It is a Frontend Mentor challenge, which I completed base on a Figma project, using React, TypeScript, Formik and pure CSS.",
@@ -20,7 +30,7 @@ export const data = [
     website: "https://dine-restaurant-website-seven.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Dictionary Web App",
     description:
       "It is a challenge from FrontendMentor.io, which I completed in React using Chakra UI. This was the second project which I completed using TypeScript and first one where I used Figma projects and free API.",
@@ -30,7 +40,7 @@ export const data = [
     website: "https://dictionary-web-app-a-zajonc.vercel.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Interactive Comments Section",
     description:
       "Another interesting Frontend Mentor challenge, which I completed in React using Chakra UI. Also, this was the first challenge which I completed using TypeScript.",
@@ -41,7 +51,7 @@ export const data = [
       "https://interactive-comments-section-b964j2hi9-a-zajonc.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Social Media Dashboard",
     description:
       "A Frontend Mentor challenge, which was perfect for Grid and Theme Mode practice. Also, I used React, Chakra UI and Express.",
@@ -51,7 +61,7 @@ export const data = [
     website: "https://social-media-dashboard-gray.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Tip Calculator App",
     description:
       "It is a frontend challenge from FrontendMentor.io, which I completed in React using Chakra UI. The app allows to calculate proper amount of tip we should leave based on three factors - amount of bill, number of people and percentage of tip.",
@@ -61,7 +71,7 @@ export const data = [
     website: "https://a-zajonc.github.io/tip-calculator-app",
   },
   {
-    id: 7,
+    id: 8,
     title: "Interactive Card Details Form",
     description:
       "A challenge from FrontendMentor.io, where, using Chakra UI and React, I created a interative card form. A user can see the details of the card update in real-time and send the form when its valid.",
@@ -72,7 +82,7 @@ export const data = [
       "https://interactive-card-details-form-git-main-a-zajonc.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Time Tracking Dashboard",
     description:
       "Another FrontendMentor.io challenge, which greated a great opportunity to practice using Grid with Chakra Ui. ",
